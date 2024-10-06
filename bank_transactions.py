@@ -1,5 +1,6 @@
 """
-Description: 
+Description: Simulates an ATM to be able to deposit, withdraw and quit 
+the program.
 Author: Curtis Ainslie
 Date: 2024-10-05
 Usage: bank_transaction.py
