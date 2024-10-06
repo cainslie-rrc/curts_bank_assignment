@@ -56,6 +56,7 @@ while user_selection.upper() != 'Q':
                                 f"Your current balance is: ${current_balance}",
                                 menu_line_break]
 
+        # Prints current balance
         for view_current_balance_lines in view_current_balance:
             print("{:^40}".format(view_current_balance_lines))
 
@@ -69,6 +70,7 @@ while user_selection.upper() != 'Q':
         if current_balance < 0:
             current_balance = current_balance + user_withdraw
 
+            # Prints insufficient funds
             for insufficient_funds_lines in insufficient_funds_menu:
                 print("{:^40}".format(insufficient_funds_lines))
 
@@ -77,6 +79,7 @@ while user_selection.upper() != 'Q':
                                 f"Your current balance is: ${current_balance}",
                                 menu_line_break]
 
+            # Prints current balance
             for view_current_balance_lines in view_current_balance:
                 print("{:^40}".format(view_current_balance_lines))
 
@@ -86,6 +89,7 @@ while user_selection.upper() != 'Q':
                                 f"Your current balance is: ${current_balance}",
                                 menu_line_break]
         
+        # Prints current balance
         for view_current_balance_lines in view_current_balance:
             print("{:^40}".format(view_current_balance_lines))
 
