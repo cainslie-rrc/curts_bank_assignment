@@ -1,5 +1,5 @@
 """
-Description: 
+Description: This script will calculate the interest rate of each balance and copy it into a new file
 Author: Curtis Ainslie
 Date: 2024-10-05
 Usage: interest_update.py
@@ -51,5 +51,6 @@ with open("updated_balance_CA.csv", 'w', newline='') as updated_file:
 
 with open("updated_balance_CA.csv", 'r') as updated_file:
     reader = csv.DictReader(updated_file)
-    for row in reader:
-        print(row["Account"], row["Balance"])
+    for accounts_and_balances_row in reader:
+        print(accounts_and_balances_row["Account"], \
+              accounts_and_balances_row["Balance"])
