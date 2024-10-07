@@ -5,6 +5,7 @@ Date: 2024-10-05
 Usage: interest_update.py
 """
 import pprint
+import csv
 
 accounts_and_balances = {}
 
@@ -35,3 +36,15 @@ for account_key, account_value in accounts_and_balances.items():
     accounts_and_balances[account_key] = new_account_value
 
 pprint.pp(accounts_and_balances)
+
+new_accounts_and_balances = "updated_balance_CA.csv"
+
+file_names = ["Account", "Balance"]
+
+with open("updatet_balance_CA.csv", 'w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=file_names)
+
+    writer.writeheader()
+
+    for account_key, account_value in accounts_and_balances.items():
+        writer.writerow({"Account": account_key, "Balance": account_value})
