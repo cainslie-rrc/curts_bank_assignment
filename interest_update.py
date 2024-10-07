@@ -37,14 +37,19 @@ for account_key, account_value in accounts_and_balances.items():
 
 pprint.pp(accounts_and_balances)
 
-new_accounts_and_balances = "updated_balance_CA.csv"
+updated_accounts_and_balances = "updated_balance_CA.csv"
 
 file_names = ["Account", "Balance"]
 
-with open("updatet_balance_CA.csv", 'w', newline='') as file:
-    writer = csv.DictWriter(file, fieldnames=file_names)
+with open("updated_balance_CA.csv", 'w', newline='') as updated_file:
+    writer = csv.DictWriter(updated_file, fieldnames=file_names)
 
     writer.writeheader()
 
     for account_key, account_value in accounts_and_balances.items():
         writer.writerow({"Account": account_key, "Balance": account_value})
+
+with open("updated_balance_CA.csv", 'r') as updated_file:
+    reader = csv.DictReader(updated_file)
+    for row in reader:
+        print(row["Account"], row["Balance"])
