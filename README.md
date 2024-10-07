@@ -14,8 +14,8 @@ This is an ATM(Automated Teller Machine) simulator as well as an interest rate u
 
 ## bank_transactions
 
-A Pixell River customer wants to simulate an ATM for depositing and withdrawing money so he can manage his account details.
+A Pixell River customer wants to simulate an ATM(Automated Teller Machine) for depositing and withdrawing money so he can manage his account details.
 
 ## interest_update
 
-The VP of client services wants to apply interest to multiple accounts to help grow their wealth.
+The vice president of client services wants to apply interest to multiple accounts to help grow their wealth.
